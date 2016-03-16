@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BaiduIFE</title>
+	<style type="text/css">
+		* {
+			font-family: "Microsoft Yahei Light"
+		}
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #E0E0E0;
+		}
+		#header {
+			width: 100%;
+			height: 70px;
+			background-color: #262626;
+		}
+		#logo img {
+			width: 170px;
+			height: 85px;
+			position: relative;
+			top: -20px;
+		}
+		#logo {
+			float: left;
+		}
+		#navigation {
+			float: right;
+			color: black;
+			font-size: 14px;
+		}
+		#navigation ul {
+			margin-top: 20px;
+		}
+		#navigation ul li {
+			float: left;
+			margin-left: 30px;
+		}
+		#navigation a {
+			color: white;
+			text-decoration: none;
+		}
+		.active {
+			color: black;
+		}
+
+		#main1 {
+			width: 95%;
+			height: 740px;
+			margin: 0 auto;
+			margin-top: 20px;
+			background-color: white;
+			box-shadow: 2px 2px 5px #222;
+		}
+
+		.article {
+			position: absolute;
+			margin: 20px;
+			margin-right: 40px;
+		}
+
+		h3, h4 {
+			color: gray;
+		}
+
+		#main1 .article li {
+			list-style-type: none;
+		}
+		#main2 {
+			width: 95%;
+			height: 2020px;
+			margin: 0 auto;
+			margin-top: 20px;
+			background-color: white;
+			box-shadow: 2px 2px 5px #222;
+		}
+		.pic {
+			position: absolute;
+			margin: 20px;
+		}
+
+		.pic_wrapper {
+			width: 250px;
+			height: 180px;
+			border: solid 1px gray;
+			margin-top: 10px;
+		}
+
+		.pic_wrapper img {
+			width: 200px;
+			margin: 50px 25px;
+		}
+
+		.pic_wrapper .annotation {
+			height: 0px;
+			position: relative;
+			left: 80px;
+		}
+
+		#main3 {
+			width: 95%;
+			height: 500px;
+			margin: 0 auto;
+			margin-top: 20px;
+			background-color: white;
+			box-shadow: 2px 2px 5px #222;
+		}
+
+		#main3 th {
+			background-color: #333333;
+			color: white;
+		}
+
+		#main3 .total {
+			background: #bbb;
+		}
+
+		table {
+			width: 100%;
+		}
+
+		#main4 {
+			width: 95%;
+			height: 400px;
+			margin: 0 auto;
+			margin-top: 20px;
+			background-color: white;
+			box-shadow: 2px 2px 5px #222;
+		}
+
+		.m4-submit {
+			position: absolute;
+			margin: 20px;
+		}
+
+		#main4 h3 {
+			color: black;
+		}
+
+		.submit-btn {
+			background: #3B4EE8;
+			border-radius: 5px;
+			width: 1250px;
+			height: 30px;
+			color: white;
+			text-align: center;
+			padding-top: 10px;
+		}
+		.submit-btn:hover {
+			cursor: pointer;
+		}
+		
+		.hint {
+			color: gray;
+		}
+
+		#bottom {
+			background-color: black;
+			width: 100%;
+			height: 100px;
+			margin-top: 20px;
+			padding-top: 20px;
+		}
+
+		.copyright {
+			color: white;
+			margin-top: 10px;
+			margin-left: 46%;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div id="logo"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png" /></div>
+		<div id="navigation">
+			<ul>
+				<li><a href="#">导航链接一</a></li>
+				<li><a href="#">导航链接二</a></li>
+				<li><a href="#">导航链接三</a></li>
+				<li><a href="#" class="active">导航链接四</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="main1">
+		<div class="article">
+			<h2>文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<h4>文章作者 文章发表时间</h4>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</p>
+			<p>这是一个很长很长的段落，这是一个很长很长的段落，<a href="#">这里有一个链接到http://ife.baidu.com</a>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落</p>
+			<p><img src="http://imgsrc.baidu.com/forum/w=580/sign=c1456e155543fbf2c52ca62b807eca1e/28551b4c510fd9f9d0331e74232dd42a2834a430.jpg"></p>
+			<p>
+				<ul>
+					<li>列表项目一</li>
+					<li>列表项目二</li>
+					<li>列表项目三</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+	<div id="main2">
+		<div class="pic">
+			<h2>图片</h2>
+			<div class="pic_wrapper">
+				<div class="annotation">好看的图片</div>
+				<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=ac11c4cb9b510fb37819779fe932c893/1525d53f8794a4c237c26d590bf41bd5ac6e3908.jpg">
+			</div>
+			<div class="pic_wrapper">
+				<div class="annotation">好看的图片</div>
+				<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=ac11c4cb9b510fb37819779fe932c893/1525d53f8794a4c237c26d590bf41bd5ac6e3908.jpg">
+			</div>
+			<div class="pic_wrapper">
+				<div class="annotation">好看的图片</div>
+				<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=ac11c4cb9b510fb37819779fe932c893/1525d53f8794a4c237c26d590bf41bd5ac6e3908.jpg">
+			</div>
+			<div class="pic_wrapper">
+				<div class="annotation">好看的图片</div>
+				<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=ac11c4cb9b510fb37819779fe932c893/1525d53f8794a4c237c26d590bf41bd5ac6e3908.jpg">
+			</div>
+			<div class="pic_wrapper">
+				<div class="annotation">好看的图片</div>
+				<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=ac11c4cb9b510fb37819779fe932c893/1525d53f8794a4c237c26d590bf41bd5ac6e3908.jpg">
+			</div>
+			<div class="pic_wrapper">
+				<div class="annotation">好看的图片</div>
+				<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=ac11c4cb9b510fb37819779fe932c893/1525d53f8794a4c237c26d590bf41bd5ac6e3908.jpg">
+			</div>
+			<div class="pic_wrapper">
+				<div class="annotation">好看的图片</div>
+				<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=ac11c4cb9b510fb37819779fe932c893/1525d53f8794a4c237c26d590bf41bd5ac6e3908.jpg">
+			</div>
+			<div class="pic_wrapper">
+				<div class="annotation">好看的图片</div>
+				<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=ac11c4cb9b510fb37819779fe932c893/1525d53f8794a4c237c26d590bf41bd5ac6e3908.jpg">
+			</div>
+			<div class="pic_wrapper">
+				<div class="annotation">好看的图片</div>
+				<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=ac11c4cb9b510fb37819779fe932c893/1525d53f8794a4c237c26d590bf41bd5ac6e3908.jpg">
+			</div>
+			<div class="pic_wrapper">
+				<div class="annotation">好看的图片</div>
+				<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=ac11c4cb9b510fb37819779fe932c893/1525d53f8794a4c237c26d590bf41bd5ac6e3908.jpg">
+			</div>
+		</div>
+	</div>
+	<div id="main3">
+		<div class="article">
+			<h2>最后一篇文章一级标题</h2>
+			<h3>文章二级标题</h3>
+			<h4>文章作者 文章发表时间</h4>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			下面是一个表格，我在这里给表格加了一个border="1"好让你看出是一个表格，你们不用写html时候不需要加
+			<table border="1" cellpadding="0" cellspacing="0">
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>
+				</tr>
+				<tr class="total">
+					<td>总计</td>
+					<td colspan="2">1000</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="main4">
+		<div class="m4-submit">
+			<h3>这里以后是一个侧栏，这是侧栏的标题</h3>
+			<form action="http://www.github.com">
+				<label>请输入邮箱地址</label><input type="text" placeholder="这是一个文本输入框" />
+				<div class="hint">邮箱地址请按照要求格式输入</div>
+				<label>请输入密码</label>
+				<input type="password" placeholder="请输入密码" />
+				<label>请重复输入密码</label>
+				<input type="password" placeholder="请输入密码" />
+				<div class="hint">密码请为6-16位英文数字</div>
+				<label>性别</label>
+				<input type="radio" name="gender">男
+				<input type="radio" name="gender">女<br />
+				<label>城市</label>
+				<select>
+					<option>北京</option>
+					<option>成都</option>
+				</select><br />
+				<label>爱好</label>
+				<input type="checkbox">运动
+				<input type="checkbox">艺术
+				<input type="checkbox">科学<br />
+				<label>个人描述</label>
+				<textarea>这是一个多行输入框，输入您的个人描述</textarea>
+				<div class="submit-btn">确认提交</div>
+			</form>
+		</div>
+	</div>
+	<div id="bottom"><span class="copyright">@evilcoda 版权所有&copy;</span></div>	
+</body>
+</html>
