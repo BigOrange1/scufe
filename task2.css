@@ -1,24 +1,47 @@
-body{
-    font-family: "Microsoft YaHei";
+@import "base.css";
+body {
+  font-family: "Microsoft YaHei";
+  background-color: #cccccc;
 }
-nav{
-    height: 30px;
-    background-color: #333;
+header#navbar {
+  height: 50px;
+  background-color: #333;
 }
-nav ul{
-    float: right;
+header#navbar img {
+  height: 50px;
 }
-nav ul li{
-    float: left;
-    /*color: #fff;*/
+header#navbar nav {
+  display: inline-block;
+  height: 50px;
+  float: right;
 }
-nav ul li:active{
-    color: #ccc;
+header#navbar nav ul {
+  display: inline-block;
 }
-nav ul li a{
-    text-decoration: none;
-    color: #ffffff;
+header#navbar nav ul li {
+  display: inline-block;
+  margin-right: 10px;
 }
-table th, td {
-    border: 1px solid #ccc;
+header#navbar nav ul li :hover {
+  color: #cccccc;
+}
+header#navbar nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+article,
+aside {
+  margin: 10px 10px 10px 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+article figure,
+aside figure {
+  display: inline-block;
+  width: 230px;
+  border: 1px solid #cccccc;
+}
+table th,
+td {
+  border: 1px solid #ccc;
 }
