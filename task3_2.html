@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>task3_Flex布局</title>
     <style>
         .border-grey{
             border:1px #999 solid;
@@ -15,61 +15,26 @@
             display: flex;
             padding: 20px;
             background: #eee;
-            /*overflow: hidden;*/
-            /*height: auto;*/
-            /*zoom: 1;*/
         }
-        /*#container>div{*/
-            /*-webkit-flex: 1 1 auto;*/
-            /*flex: 1 1 auto;*/
-        /*}*/
         #left{
-            flex: 0 1 200px;
+            width:200px;
+            margin-right: 20px;
         }
         #main{
             flex: 1;
-
         }
         #right{
-            flex: 0 1 120px;
-
+            width:120px;
+            margin-left: 20px;
         }
     </style>
 </head>
 <body>
 <div id="container" class="border-grey bg-white">
-    <div id="left" class="border-grey bg-white">一般大家都是在兼容ie6上下功夫，这道题很特别，把ie7+也独立出来了，考察的是hack和样式的先后顺序）
-        7 用getDate() 获取星期数，然后弹出的是 星期一 星期二 星期三 .......星期日
-        （我当时用switch写的，面试官给了我些提示，有没有办法优化一下，比如 geDate得到的是下标。我是这样写的 Var times=new Date();  var days=times.getDay();   var a=[“一”，”二”，”三”..... ]  
-        Alert( “星期”+a[days]）。</div>
-    <div id="main" class="border-grey bg-white">（一般大家都是在兼容ie6上下功夫，这道题很特别，把ie7+也独立出来了，考察的是hack和样式的先后顺序）7 用getDate() 获取星期数，然后弹出的是 星期一 星期二 星期三 .......星期日
-        （我当时用switch写的，面试官给了我些提示，有没有办法优化一下，比如 geDate得到的是下标。我是这样写的 Var times=new Date();  var days=times.getDay();   var a=[“一”，”二”，”三”..... ]  
-        Alert( “星期”+a[days]）。
-        8 用原生js做过什么样的效果？
-        (突然这么问，我还真没说出来几个)
-        9 知道js代理吗？解释下 
-        看似很高级的东西，其实我被忽悠了 无非就是我们老师讲过的事件委托罢了 比如:
-        function getEventTarget(e) 
-        10 请指出document.ready和onload的区别</div>
-    <div id="right" class="border-grey bg-white">的萨芬范德萨的萨芬范德萨的萨芬范德萨的萨芬范德萨的萨芬范德萨的萨芬范德萨的萨芬范111111111111111111111111111111111111111111111</div>
+    <div id="left" class="border-grey bg-white">left</div>
+    <div id="main" class="border-grey bg-white">main</div>
+    <div id="right" class="border-grey bg-white">right</div>
 
 </div>
-<script>
-    //    function adjustParentHeight(){
-    //        var main = document.getElementById("main").offsetHeight;
-    //        var leftHeight = document.getElementById("left").offsetHeight;
-    //        var rightHeight = document.getElementById("right").offsetHeight;
-    //        var most = Math.max(main,leftHeight,rightHeight);
-    //        document.getElementById("container").style.height = most+"px";
-    //    }
-    //    window.onload = function(){
-    //        adjustParentHeight();
-    //    };
-    //
-    //    window.onresize = function(){
-    //        adjustParentHeight();
-    //    }
-
-</script>
 </body>
 </html>
