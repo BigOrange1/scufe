@@ -1,0 +1,45 @@
+.border-grey {
+  border: 1px #999 solid;
+}
+.bg-white {
+  background-color: white;
+}
+#container {
+  display: flex;
+  padding: 20px;
+  background: #eee;
+}
+#container #left {
+  width: 200px;
+  margin-right: 20px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#container #left img {
+  width: 80px;
+  height: 80px;
+}
+#container #left div {
+  display: inline-block;
+  width: 80px;
+  vertical-align: top;
+}
+#container #main {
+  flex: 1;
+  padding: 20px;
+}
+#container #right {
+  width: 120px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  right: 20px;
+}
+#container #right img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 18px;
+}
+#container #right img:last-of-type {
+  margin-bottom: 0;
+}

@@ -1,0 +1,62 @@
+@import "base.css";
+.border-grey{
+  border:1px #999 solid;
+}
+.bg-white{
+  background-color: white;
+}
+body{
+  padding: 20px;
+}
+#container{
+  padding: 20px 160px 20px 240px;
+  background: #eee;
+  &::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  #left,#main,#right{
+    float: left;
+    position: relative;
+  }
+  #left{
+    width:200px;
+    margin-left: -100%;
+    left:-220px;
+
+    padding: 15px;
+    box-sizing: border-box;
+    img{
+      width: 80px;
+      height: 80px;
+    }
+    div{
+      display: inline-block;
+      width: 80px;
+      vertical-align: top;
+    }
+  }
+  #main{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  #right{
+    right:-140px;
+    margin-left: -120px;
+    width:120px;
+
+    box-sizing: border-box;
+    padding: 20px;
+    img{
+      width: 80px;
+      height: 80px;
+      margin-bottom: 18px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
