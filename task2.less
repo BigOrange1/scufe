@@ -4,18 +4,8 @@ body{
     background-color: #cccccc;
 }
 header#navbar{
-    height: 50px;
+    height: 65px;
     background-color: #333;
-    //h1{
-    //    display: none;
-    //    :after{
-    //        border: 1px solid red;
-    //        content: "";
-    //        height:50px;
-    //        width: 50px;
-    //        background-image: url("https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/logo_white_fe6da1ec.png");
-    //    }
-    //}
     img{
         height: 50px;
     }
@@ -28,7 +18,7 @@ header#navbar{
             li{
                 display: inline-block;
                 margin-right:10px;
-                :hover{
+                :hover, &.active {
                     color: #cccccc;
                 }
                 a{
@@ -45,8 +35,78 @@ article,aside{
     background-color: #ffffff;
     padding: 10px;
     figure{
-        display: inline-block;
-        width: 230px;
+        width: 216px;
         border:1px solid #cccccc;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+table {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    thead {
+        background-color: #333333;
+        color: white;
+    }
+    td {
+        border: 1px solid #ccc;
+    }
+    tfoot {
+        background-color: #cccccc;
+    }
+}
+
+aside {
+    header {
+        border-left: 3px solid #ccc;
+        padding: 1px 0 1px 10px;
+    }
+    form {
+        div {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .left {
+            display: inline-block;
+            width: 40%;
+            text-align: right;
+            &:last-of-type{
+              vertical-align: top;
+            }
+        }
+        .right{
+            margin-left: 5px;
+        }
+        .placeholder {
+            margin-left: 40%;
+            color: #aaa;
+            font-size: 14px;
+        }
+        input[type="email"],input[type="password"],textarea,select{
+            padding: 3px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px 0 10px 0;
+            border: 1px solid blue;
+            border-radius: 5px;
+            background-color: blue;
+            color: #fff;
+        }
+        textarea {
+            width: 55%;
+        }
+    }
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px 0  30px 0;
+    span{
+        color: white;
     }
 }

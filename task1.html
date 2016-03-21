@@ -7,9 +7,6 @@
         body{
             font-family: "Microsoft YaHei";
         }
-		table th, td {
-			border: 1px solid #ccc;
-		}
 	</style>
 </head>
 <body>
@@ -139,14 +136,16 @@
 		<li>排名3</li>
 	</ol>
 	<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
-	<table>
+	<table border="1">
+		<thead>
+		<tr>
+			<th>表头</th>
+			<th>表头</th>
+			<th>表头</th>
+		</tr>
+		</thead>
 		<tbody>
 		<tr>
-			<th>表头</th>
-			<th>表头</th>
-			<th>表头</th>
-		</tr>
-		<tr>
 			<td>表内容单元格</td>
 			<td>表内容单元格</td>
 			<td><a href="">操作</a></td>
@@ -166,11 +165,13 @@
 			<td>表内容单元格</td>
 			<td><a href="">操作</a></td>
 		</tr>
+		</tbody>
+		<tfoot>
 		<tr>
 			<td>总计</td>
 			<td colspan="2">1000</td>
 		</tr>
-		</tbody>
+		</tfoot>
 	</table>
 </article>
 <aside>
@@ -199,7 +200,7 @@
 		<input type="checkbox" id="science"><label for="science">科学</label>
 		<label for="description">个人描述：</label>
 		<textarea name="" id="description" cols="30" rows="2">这是一个多行输入框，输入您的个人描述</textarea>
-		<input type="submit">
+		<input type="submit" value="确认提交">
 	</form>
 </aside>
 <footer>
