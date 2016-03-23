@@ -1,0 +1,293 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Microsoft Yahei";
+}
+
+.header {
+	height: 70px;
+}
+
+.logo {
+	height: 60px;
+	margin-left: 80px;
+	margin-top: 8px;
+}
+
+.logo {
+	float: left;
+}
+
+.logo-left img {
+	width: 50px;
+	height: 50px;
+}
+
+.logo-right {
+	font-size: 30px;
+	position: relative;
+	top: -10px;
+	font-family: "SimSum";
+}
+
+.nav {
+	float: right;
+}
+
+.nav-item {
+	list-style: none;
+	margin-right: 20px;
+	float: left;
+}
+
+.nav-item li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.nav-item li a {
+	text-decoration: none;
+	color: gray;
+}
+
+.nav-item li a:hover {
+	color: #E74F4D;
+	border-bottom: 5px solid #E74F4D;
+	padding-bottom: 20px;
+}
+
+.user-login img {
+	margin-right: 10px;
+	position: relative;
+	top: 4px;
+}
+
+.user-login {
+	float: right;
+	margin-right: 50px;
+	position: relative;
+	top: 12px;
+	text-decoration: none;
+	color: #E74F4D;
+}
+
+.travel {
+	width: 100%;
+	height: 689px;
+	overflow: hidden;
+	background: url(../img/travel.jpg) no-repeat;
+	background-size: cover;
+}
+
+.travel-inner {
+	width: 500px;
+	height: 500px;
+	color: white;
+	margin-top: 200px;
+	margin-left: 100px;
+}
+
+.travel-inner .eng {
+	font-size: 50px;
+}
+
+.travel-inner .cn {
+	font-size: 20px;
+}
+
+.travel-inner .btn {
+	text-decoration: none;
+	display: block;
+	background-color: #E74F4D;
+	color: white;
+	width: 300px;
+	height: 50px;
+	margin-top: 50px;
+	text-align: center;
+	padding-top: 10px;
+	font-size: 30px;
+}
+
+.travel-inner a:hover {
+	background-color: #B34D9E;
+}
+
+.text {
+	height: 250px;
+	margin-top: 60px;
+	font-size: 14px;
+	color: gray;
+}
+
+.text ul {
+	list-style: none;
+}
+
+.text ul li {
+	display: inline-block;
+	margin-left: 120px;
+}
+
+.text ul li img {
+	position: relative;
+	right: -60px;
+	margin-bottom: 30px;
+}
+
+.about {
+	height: 360px;
+	background-color: #ededec;
+	text-align: center;
+}
+
+.about img {
+	margin-top: 50px;
+}
+
+.about p {
+	font-size: 54px;
+	font-family: "黑体";
+	line-height: 56px;
+	color: gray;
+}
+
+.search {
+	height: 342px;
+	background: url(../img/new-world.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+.search {
+	padding-top: 50px;
+	font-size: 21px;
+	line-height: 42px;
+	color: white;
+}
+
+.search hr {
+	margin: 0 auto;
+	background-color: white;
+	width: 30px;
+	height: 2px;
+}
+
+.search p {
+	font-size: 12px;
+	line-height: 31px;
+}
+
+.form {
+	margin: 0 auto;
+	width: 1064px;
+	margin-top: 100px;
+}
+
+.form p {
+	font-size: 15px;
+	margin-top: 0px;
+}
+
+.select {
+	width: 236px;
+	height: 33px;
+	float: left;
+	margin-right: 29px;
+	background: url(../img/sh_icon.jpg) #fff 210px 8px no-repeat;
+	color: gray;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.submit {
+	background-color: #E74F4D;
+	width: 236px;
+	height: 33px;
+	float: left;
+	text-decoration: none;
+	color: white;
+}
+
+.select-list {
+	background-color: #EEEEEE;
+	position: relative;
+	top: -13px;
+	left: -11px;
+	width: 246px;
+	border: 1px solid #E74F4D;
+}
+
+.active {
+	border: 1px solid #E74F4D;
+}
+.select-ul {
+	list-style: none;
+	font-size: 14px;
+}
+
+.select-ul li {
+	line-height: 23px;
+	text-align: left;
+}
+
+.select-ul li:hover {
+	background-color: #E74F4D;
+}
+
+.activity {
+	height: 605px;
+	background-color: #eee;
+	margin-top: -17px;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.activity ul {
+	list-style: none;
+}
+
+.activity ul li {
+	display: inline-block;
+	margin-right: 30px;
+	color: gray;
+}
+
+.activity ul li > p:first-child {
+	color: black;
+}
+
+.activity ul li img {
+	border: 1px solid #ddd;
+}
+
+.newshow {
+	height: 569px;
+	margin-top: -50px;
+}
+
+.show-left {
+	height: 569px;
+	width: 847px;
+	background: url(../img/sock.jpg) no-repeat;
+	color: white;
+	text-align: center;
+}
+
+.t1 {
+	font-size: 50px;
+}
+
+.t2 {
+	font-size: 158px;
+	margin-top: -80px;
+}
+
+.t3 {
+	font-size: 22px;
+	margin-top: -180px;
+}
+
+.t4 {
+	font-size: 22px;
+	margin-top: -20px;
+}
