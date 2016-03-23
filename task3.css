@@ -1,0 +1,46 @@
+.border-grey {
+  border: 1px #999 solid;
+}
+.bg-white {
+  background-color: white;
+}
+#container {
+  position: relative;
+  padding: 20px;
+  background: #eee;
+}
+#container #left {
+  padding: 15px;
+  box-sizing: border-box;
+  width: 200px;
+}
+#container #left img {
+  width: 80px;
+  height: 80px;
+}
+#container #left div {
+  display: inline-block;
+  width: 80px;
+  vertical-align: top;
+}
+#container #main {
+  position: absolute;
+  left: 240px;
+  right: 160px;
+  padding: 20px;
+}
+#container #right {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 20px;
+  right: 20px;
+  width: 120px;
+}
+#container #right img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 18px;
+}
+#container #right img:last-of-type {
+  margin-bottom: 0;
+}

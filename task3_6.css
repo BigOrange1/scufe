@@ -1,0 +1,53 @@
+@import "base.css";
+.border-grey {
+  border: 1px #999 solid;
+}
+.bg-white {
+  background-color: white;
+}
+body {
+  padding: 20px;
+}
+#container {
+  padding: 20px;
+  background: #eee;
+}
+#container::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#container #left {
+  width: 200px;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+#container #left img {
+  width: 80px;
+  height: 80px;
+}
+#container #left div {
+  display: inline-block;
+  width: 80px;
+  vertical-align: top;
+}
+#container #main {
+  margin: 0 140px 0 220px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+#container #right {
+  float: right;
+  width: 120px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+#container #right img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 18px;
+}
+#container #right img:last-of-type {
+  margin-bottom: 0;
+}
