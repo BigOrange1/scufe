@@ -1,4 +1,4 @@
-@import "base.css";
+@import "../stylesheets/base.css";
 .border-grey {
   border: 1px #999 solid;
 }
@@ -21,12 +21,10 @@ body {
 #container #main,
 #container #right {
   float: left;
-  position: relative;
 }
 #container #left {
   width: 200px;
-  margin-left: -100%;
-  left: -220px;
+  margin-left: -220px;
   padding: 15px;
   box-sizing: border-box;
 }
@@ -45,8 +43,8 @@ body {
   padding: 20px;
 }
 #container #right {
-  right: -140px;
-  margin-left: -120px;
+  margin-right: -140px;
+  float: right;
   width: 120px;
   box-sizing: border-box;
   padding: 20px;

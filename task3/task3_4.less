@@ -1,4 +1,4 @@
-@import "base.css";
+@import "../stylesheets/base.css";
 .border-grey{
   border:1px #999 solid;
 }
@@ -9,19 +9,19 @@ body{
   padding: 20px;
 }
 #container{
-  padding: 20px 160px 20px 240px;
   background: #eee;
+  padding: 20px;
   &::after{
     content: '';
     display: block;
     clear: both;
   }
-  #left,#main,#right{
+  #left,#main-outer,#right{
     float: left;
   }
   #left{
     width:200px;
-    margin-left: -220px;
+    margin-left: -100%;
     padding: 15px;
     box-sizing: border-box;
     img{
@@ -34,14 +34,16 @@ body{
       vertical-align: top;
     }
   }
-  #main{
+  #main-outer{
     width: 100%;
+  }
+  #main{
     box-sizing: border-box;
     padding: 20px;
+    margin:0 140px 0 220px;
   }
   #right{
-    margin-right: -140px;
-    float: right;
+    margin-left: -120px;
     width:120px;
     box-sizing: border-box;
     padding: 20px;

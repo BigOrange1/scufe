@@ -1,4 +1,4 @@
-@import "base.css";
+@import "../stylesheets/base.css";
 .border-grey{
   border:1px #999 solid;
 }
@@ -9,16 +9,22 @@ body{
   padding: 20px;
 }
 #container{
-  padding: 20px;
+  padding: 20px 160px 20px 240px;
   background: #eee;
   &::after{
     content: '';
     display: block;
     clear: both;
   }
+  #left,#main,#right{
+    float: left;
+    position: relative;
+  }
   #left{
     width:200px;
-    float: left;
+    margin-left: -100%;
+    left:-220px;
+
     padding: 15px;
     box-sizing: border-box;
     img{
@@ -32,13 +38,15 @@ body{
     }
   }
   #main{
-    margin:0 140px 0 220px;
+    width: 100%;
     box-sizing: border-box;
     padding: 20px;
   }
   #right{
-    float: right;
+    right:-140px;
+    margin-left: -120px;
     width:120px;
+
     box-sizing: border-box;
     padding: 20px;
     img{

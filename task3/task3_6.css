@@ -1,4 +1,4 @@
-@import "base.css";
+@import "../stylesheets/base.css";
 .border-grey {
   border: 1px #999 solid;
 }
@@ -9,7 +9,7 @@ body {
   padding: 20px;
 }
 #container {
-  padding: 20px 160px 20px 240px;
+  padding: 20px;
   background: #eee;
 }
 #container::after {
@@ -17,14 +17,9 @@ body {
   display: block;
   clear: both;
 }
-#container #left,
-#container #main,
-#container #right {
-  float: left;
-}
 #container #left {
   width: 200px;
-  margin-left: -220px;
+  float: left;
   padding: 15px;
   box-sizing: border-box;
 }
@@ -38,12 +33,11 @@ body {
   vertical-align: top;
 }
 #container #main {
-  width: 100%;
+  margin: 0 140px 0 220px;
   box-sizing: border-box;
   padding: 20px;
 }
 #container #right {
-  margin-right: -140px;
   float: right;
   width: 120px;
   box-sizing: border-box;

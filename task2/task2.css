@@ -1,4 +1,4 @@
-@import "base.css";
+@import "../stylesheets/base.css";
 body {
   font-family: "Microsoft YaHei";
   background-color: #cccccc;
