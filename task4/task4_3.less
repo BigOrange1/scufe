@@ -1,0 +1,39 @@
+*{
+  margin:0;
+  padding: 0;
+}
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  .grey{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #cccccc;
+    overflow: hidden;
+
+    .left,.right{
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: #fc0;
+    }
+    .left{
+      margin-left: -50px;
+      margin-top: -50px;
+    }
+    .right{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      margin-right: -50px;
+      margin-bottom: -50px;
+    }
+  }
+}
