@@ -1,39 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>task4</title>
-    <style type="text/css">
-        .main-content {
-            background-color: #ccc;
-            height: 200px;
+    <meta charset="UTF-8">
+    <title>task4_inline-block_table_table-cell</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+        //display: table;
+        //width: 100%;
+            height: 100%;/*固定高度*/
+        }
+
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            vertical-align: middle;
+            text-align: center; /*水平居中*/
+        }
+        .grey {
+            display: inline-block; /*行内元素*/
+            position: relative;
             width: 400px;
-            margin: auto;
-            margin-top: 20%;
+            height: 200px;
+            background-color: #cccccc;
             overflow: hidden;
         }
-        .top-left, .bottom-right {
-            background: #fc0;
+
+        .left, .right {
             width: 100px;
             height: 100px;
             border-radius: 50px;
+            background-color: #fc0;
         }
-        .top-left {
-            position: relative;
-            top: -50px;
-            left: -50px;
+        .left {
+            margin-left: -50px;
+            margin-top: -50px;
         }
-        .bottom-right {
-            float: right;
-            position: relative;
-            right: -50px;
-            bottom: -50px;
+        .right {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-right: -50px;
+            margin-bottom: -50px;
+
         }
+/**/
     </style>
 </head>
 <body>
-<div class="main-content">
-    <div class="top-left"></div>
-    <div class="bottom-right"></div>
+<div class="grey">
+    <div class="left"></div>
+    <div class="right"></div>
 </div>
 </body>
 </html>
