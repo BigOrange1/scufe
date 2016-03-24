@@ -1,49 +1,63 @@
 @import "../stylesheets/base.css";
 body{
     font-family: "Microsoft YaHei";
-    background-color: #cccccc;
+    background-color: #ddd;
 }
-header#navbar{
-    height: 65px;
+.nav-header nav{
     background-color: #333;
-    img{
-        height: 50px;
-    }
-    nav{
+    .nav-logo{
         display: inline-block;
-        height: 50px;
+        img{
+            height: 50px;
+        }
+    }
+    .nav-list{
+        display: inline-block;
         float: right;
         ul{
             display: inline-block;
+            margin-top: 15px;
             li{
-                display: inline-block;
-                margin-right:10px;
-                :hover, &.active {
-                    color: #cccccc;
-                }
+                font-size: 14px;
+                float: left;
+                margin-right:25px;
                 a{
                     text-decoration: none;
                     color: #ffffff;
+                }
+                &:hover , &.active {
+                    color: #cccccc;
+                    a{
+                        color: #cccccc;
+                    }
                 }
             }
         }
     }
 }
 
+p{
+    text-indent: 2em;
+}
+
 article,aside{
     margin:20px;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 30px 20px;
     header{
         h1{
             font-size: 2em;
+            margin-bottom: 10px;
         }
         h2{
             color: #888;
+            margin-bottom: 10px;
         }
-        span{
+        h6{
             color: #999;
-            font-size: 0.9em;
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 8px;
         }
     }
     figure{
@@ -51,9 +65,22 @@ article,aside{
         border:1px solid #cccccc;
         text-align: center;
         padding: 10px;
+        margin:20px;
+        figcaption{
+            margin-bottom: 10px;
+        }
+    }
+    section div img{
+        margin: 10px 0 10px 0;
     }
     section ul li{
+        text-indent: 2em;
         list-style: none;
+        margin-bottom: 5px;
+    }
+    ol li{
+        margin-left: 2em;
+        margin-bottom: 5px;
     }
 }
 
@@ -68,6 +95,9 @@ table {
     }
     td {
         border: 1px solid #ccc;
+    }
+    td,th{
+        padding: 3px;
     }
     tfoot {
         background-color: #cccccc;

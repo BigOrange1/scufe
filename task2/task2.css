@@ -1,53 +1,67 @@
 @import "../stylesheets/base.css";
 body {
   font-family: "Microsoft YaHei";
-  background-color: #cccccc;
+  background-color: #ddd;
 }
-header#navbar {
-  height: 65px;
+.nav-header nav {
   background-color: #333;
 }
-header#navbar img {
+.nav-header nav .nav-logo {
+  display: inline-block;
+}
+.nav-header nav .nav-logo img {
   height: 50px;
 }
-header#navbar nav {
+.nav-header nav .nav-list {
   display: inline-block;
-  height: 50px;
   float: right;
 }
-header#navbar nav ul {
+.nav-header nav .nav-list ul {
   display: inline-block;
+  margin-top: 15px;
 }
-header#navbar nav ul li {
-  display: inline-block;
-  margin-right: 10px;
+.nav-header nav .nav-list ul li {
+  font-size: 14px;
+  float: left;
+  margin-right: 25px;
 }
-header#navbar nav ul li :hover,
-header#navbar nav ul li.active {
-  color: #cccccc;
-}
-header#navbar nav ul li a {
+.nav-header nav .nav-list ul li a {
   text-decoration: none;
   color: #ffffff;
+}
+.nav-header nav .nav-list ul li:hover,
+.nav-header nav .nav-list ul li.active {
+  color: #cccccc;
+}
+.nav-header nav .nav-list ul li:hover a,
+.nav-header nav .nav-list ul li.active a {
+  color: #cccccc;
+}
+p {
+  text-indent: 2em;
 }
 article,
 aside {
   margin: 20px;
   background-color: #ffffff;
-  padding: 10px;
+  padding: 30px 20px;
 }
 article header h1,
 aside header h1 {
   font-size: 2em;
+  margin-bottom: 10px;
 }
 article header h2,
 aside header h2 {
   color: #888;
+  margin-bottom: 10px;
 }
-article header span,
-aside header span {
+article header h6,
+aside header h6 {
   color: #999;
-  font-size: 0.9em;
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 article figure,
 aside figure {
@@ -55,10 +69,26 @@ aside figure {
   border: 1px solid #cccccc;
   text-align: center;
   padding: 10px;
+  margin: 20px;
+}
+article figure figcaption,
+aside figure figcaption {
+  margin-bottom: 10px;
+}
+article section div img,
+aside section div img {
+  margin: 10px 0 10px 0;
 }
 article section ul li,
 aside section ul li {
+  text-indent: 2em;
   list-style: none;
+  margin-bottom: 5px;
+}
+article ol li,
+aside ol li {
+  margin-left: 2em;
+  margin-bottom: 5px;
 }
 table {
   border: 1px solid #ccc;
@@ -72,6 +102,10 @@ table thead {
 }
 table td {
   border: 1px solid #ccc;
+}
+table td,
+table th {
+  padding: 3px;
 }
 table tfoot {
   background-color: #cccccc;
