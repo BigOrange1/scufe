@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Task3_JS控制</title>
+    <title>Task3_absolute_JS控制</title>
     <link rel="stylesheet" href="task3.css">
 </head>
 <body>
+<div class="blue-border">
+    实现方式一：absolute绝对定位，利用left和right将main拉伸开；同时使用JS控制父元素的高度。
+</div>
 <div id="container" class="border-grey bg-white">
     <div id="main" class="border-grey bg-white">
-        我们是来自四川大学2012级软件工程的学生，身边有六个想参加的同学。于是拆分为1队和2队。<br>
-        1队成员包括 <br>
-        周丹：<br>
-        黄健：<br>
-        马海兵：<br>
+        大家好！！我们是来自四川大学2012级软件工程的学生，身边有六个想参加的同学。于是拆分为1队和2队。（对比起其他的小鲜肉，我们是三枚老人了）<br><br>
+        1队成员包括： <br>
+        <b>周丹(队长)</b>：在百度实习的在校大四学生，自知还有很多不足，所以期待能够通过参加这次百度ife训练营，踏踏实实的完成每一道题，系统地巩固自己的知识。<br><br>
+        <b>黄健</b>：后台人员，因项目需要，常常需要兼职写前端代码，苦恼一直是堆砌拼凑，希望借此能够多多学习前端基础知识，成为腻害的全栈工程师。<br><br>
+        <b>马海兵</b>：后台人员，自称是想跟着大家打打酱油，看看大家怎么写代码。真实目的不详。<br>
     </div>
     <div id="right" class="border-grey bg-white">
         <img src="../image/me.jpg" alt="zhoudan">
@@ -21,8 +24,34 @@
     </div>
     <div id="left" class="border-grey bg-white">
         <img src="../image/sculogo.jpg" alt="scu logo">
-        <div>四川大学1队</div>
+
+        <div><h5>四川大学1队</h5></div>
     </div>
+</div>
+<div class="blue-border">
+    <b>友情链接：</b>
+    <ul>
+        <li>实现方式二：
+            <a href="task3_2.html" target="_blank">Flex布局，代价是子元素的高度一致。</a>
+            <a href="https://github.com/scuife/scufe/blob/gh-pages/task3/task3_2.html" class="code" target="_blank">2代码地址</a>
+        </li>
+        <li>实现方式三：
+            <a href="task3_3.html" target="_blank">圣杯布局，利用了padding和负边距，以及相对定位，保证了main内容在前面，</a>
+            <a href="https://github.com/scuife/scufe/blob/gh-pages/task3/task3_3.html" class="code" target="_blank">3代码地址</a>
+        </li>
+        <li>实现方式四：
+            <a href="task3_4.html" target="_blank">双飞翼布局，给main加一个包裹层</a>
+            <a href="https://github.com/scuife/scufe/blob/gh-pages/task3/task3_4.html" class="code" target="_blank">4代码地址</a>
+        </li>
+        <li>实现方式五：
+            <a href="task3_5.html" target="_blank">圣杯布局，main在中间，不需要相对定位</a>
+            <a href="https://github.com/scuife/scufe/blob/gh-pages/task3/task3_5.html" class="code" target="_blank">5代码地址</a>
+        </li>
+        <li>实现方式六：
+            <a href="task3_6.html" target="_blank">圣杯布局，main在后面，纯浮动</a>
+            <a href="https://github.com/scuife/scufe/blob/gh-pages/task3/task3_6.html" class="code" target="_blank">6代码地址</a>
+        </li>
+    </ul>
 </div>
 <script>
     function adjustParentHeight(){
