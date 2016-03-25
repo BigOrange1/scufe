@@ -2,59 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>task4_inline-block_table_table-cell</title>
+    <title>task3_圣杯布局_main在前面</title>
+    <link rel="stylesheet" href="task3_3.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
+        @import "../stylesheets/base.css";
+        .border-grey {
+            border: 1px #999 solid;
         }
-
-        html {
-        //display: table;
-        //width: 100%;
-            height: 100%;/*固定高度*/
+        .bg-white {
+            background-color: white;
         }
-
         body {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            vertical-align: middle;
-            text-align: center; /*水平居中*/
+            padding: 20px;
         }
-        .grey {
-            display: inline-block; /*行内元素*/
+        #container {
+            padding: 20px 160px 20px 240px;
+            background: #eee;
+        }
+        #container::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        #container #left,
+        #container #main,
+        #container #right {
+            float: left;
             position: relative;
-            width: 400px;
-            height: 200px;
-            background-color: #cccccc;
-            overflow: hidden;
+        }
+        #container #left {
+            width: 200px;
+            margin-left: -100%;
+            left: -220px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        #container #left img {
+            width: 80px;
+            height: 80px;
+        }
+        #container #left div {
+            display: inline-block;
+            width: 80px;
+            vertical-align: top;
+        }
+        #container #main {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        #container #right {
+            right: -140px;
+            margin-left: -120px;
+            width: 120px;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        #container #right img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 18px;
+        }
+        #container #right img:last-of-type {
+            margin-bottom: 0;
         }
 
-        .left, .right {
-            width: 100px;
-            height: 100px;
-            border-radius: 50px;
-            background-color: #fc0;
-        }
-        .left {
-            margin-left: -50px;
-            margin-top: -50px;
-        }
-        .right {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            margin-right: -50px;
-            margin-bottom: -50px;
-
-        }
-/**/
     </style>
 </head>
 <body>
-<div class="grey">
-    <div class="left"></div>
-    <div class="right"></div>
+<div id="container" class="border-grey bg-white">
+    <div id="main" class="border-grey bg-white">
+        大家好！！我们是来自四川大学2012级软件工程的学生，身边有六个想参加的同学。于是拆分为1队和2队。（对比起其他的小鲜肉，我们是三枚老人了）<br><br>
+        1队成员包括： <br>
+        <b>周丹(队长)</b>：在百度实习的在校大四学生，自知还有很多不足，所以期待能够通过参加这次百度ife训练营，踏踏实实的完成每一道题，系统地巩固自己的知识。<br><br>
+        <b>黄健</b>：后台人员，因项目需要，常常需要兼职写前端代码，苦恼一直是堆砌拼凑，希望借此能够多多学习前端基础知识，成为腻害的全栈工程师。<br><br>
+        <b>马海兵</b>：后台人员，自称是想跟着大家打打酱油，看看大家怎么写代码。真实目的不详。<br>
+    </div>
+
+    <div id="right" class="border-grey bg-white">
+        <img src="image/me.jpg" alt="zhoudan">
+        <img src="image/logo1.jpg" alt="huangjian">
+        <img src="image/logo2.png" alt="mahaibing">
+    </div>
 </div>
 </body>
 </html>

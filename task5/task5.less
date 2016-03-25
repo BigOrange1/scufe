@@ -1,0 +1,193 @@
+@import "../stylesheets/base.css";
+body{
+    font-family: "Microsoft YaHei";
+    background-color: #ddd;
+}
+.nav-header nav{
+    background-color: #333;
+    .nav-logo{
+        display: inline-block;
+        img{
+            height: 50px;
+        }
+    }
+    .nav-list{
+        display: inline-block;
+        float: right;
+        ul{
+            display: inline-block;
+            margin-top: 15px;
+            li{
+                font-size: 14px;
+                float: left;
+                margin-right:25px;
+                a{
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+                &:hover , &.active {
+                    color: #cccccc;
+                    a{
+                        color: #cccccc;
+                    }
+                }
+            }
+        }
+    }
+}
+
+p{
+    text-indent: 2em;
+}
+
+article,aside{
+    margin:20px 0 20px 20px;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    header{
+        h1{
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        h2{
+            color: #888;
+            margin-bottom: 10px;
+        }
+        h6{
+            color: #999;
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+    }
+    .image-list::after{
+        display: block;
+        clear: both;
+        content: "";
+    }
+    figure{
+        border:1px solid #cccccc;
+        text-align: center;
+        padding: 8px;
+        margin:8px;
+        float: left;
+        figcaption{
+            margin-bottom: 10px;
+        }
+        img{
+            width: 140px;
+        }
+    }
+    section div img{
+
+        margin: 10px 0 10px 0;
+    }
+    section ul li{
+        text-indent: 2em;
+        list-style: none;
+        margin-bottom: 5px;
+    }
+    ol li{
+        margin-left: 2em;
+        margin-bottom: 5px;
+    }
+}
+
+table {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    thead {
+        background-color: #333333;
+        color: white;
+    }
+    td {
+        border: 1px solid #ccc;
+    }
+    td,th{
+        padding: 3px;
+    }
+    tfoot {
+        background-color: #cccccc;
+    }
+}
+
+aside {
+    header {
+        border-left: 3px solid #ccc;
+        padding: 1px 0 1px 10px;
+        margin-bottom: 10px;
+    }
+    form {
+        div {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .left {
+            display: inline-block;
+            width: 40%;
+            text-align: right;
+            &:last-of-type{
+              vertical-align: top;
+            }
+        }
+        .right{
+            margin-left: 5px;
+        }
+        .placeholder {
+            margin-left: 40%;
+            margin-left: ~"calc(40% + 10px)";
+            color: #aaa;
+            font-size: 14px;
+        }
+        input[type="email"],input[type="password"],textarea,select{
+            padding: 3px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px 0 10px 0;
+            border: 1px solid blue;
+            border-radius: 5px;
+            background-color: blue;
+            color: #fff;
+        }
+        textarea {
+            width: 55%;
+        }
+    }
+}
+
+.container{
+    background-color: #ddd;
+    padding-right: 400px;
+    &::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .main, aside{
+        float: left;
+        position: relative;
+    }
+    .main{
+        width: 100%;
+
+    }
+    aside{
+        margin-left: -360px;
+        right: -380px;
+        width: 360px;
+        box-sizing: border-box;
+    }
+}
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px 0  30px 0;
+    span{
+        color: white;
+    }
+}
