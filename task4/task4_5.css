@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+body .grey {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  background-color: #cccccc;
+  overflow: hidden;
+}
+body .grey .left,
+body .grey .right {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #fc0;
+}
+body .grey .left {
+  margin-left: -50px;
+  margin-top: -50px;
+}
+body .grey .right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: -50px;
+  margin-bottom: -50px;
+}
