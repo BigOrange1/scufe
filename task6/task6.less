@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+    height: 1386px;
+    padding-left: 44px;
+    padding-right: 44px;
+    font-family:"Microsoft YaHei";
+    font-size: 0;
+}
+header{
+    border-bottom: 2px solid #938e8c;
+    .head-title{
+        width: 110px;
+        height: 61px;
+        background-color: red;
+        color: #ffffff;
+        font-size: 12px;
+        display: table-cell;
+        vertical-align: bottom;
+        padding: 0 0 5px 5px ;
+        box-sizing: border-box;
+    }
+    .head-date{
+        position: absolute;
+        right: 44px;
+        top: 42px;
+        font-size: 12px;
+        color: #d45d5c;
+    }
+    &::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+.section-one{
+    margin-top: 40px;
+    .img-container{
+        position: relative;
+        width: 641px;
+        display: inline-block;
+        &::before,&::after{
+            content: "";
+            display: block;
+            position: absolute;
+            top:0;
+            width: 191px;
+            height: 301px;
+            z-index: 1;
+        }
+        &::before{
+            background-color: rgba(0,128,0,50%);
+            left: 0;
+        }
+        &::after{
+            background-color: rgba(120,0,0,50%);
+            right: 0;
+        }
+    }
+    .section-one-right{
+        display: inline-block;
+        font-size: 14px;
+        width: 203px;
+        margin-left: 40px;
+        border-top: 2px solid #cc8091;
+        .section-one-title{
+            font-size: 24px;
+            text-decoration: underline;
+            &::first-letter{
+                text-decoration: none;
+                font-size: 30px;
+            }
+        }
+        .section-one-text{
+            margin:10px 0;
+            font-size: 12px;
+            color: #676767;
+        }
+    }
+}
