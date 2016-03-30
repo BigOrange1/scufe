@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@theme-color-red: #d45d5c;
 *{
     margin: 0;
     padding: 0;
@@ -16,10 +17,11 @@ body{
 }
 header{
     border-bottom: 2px solid #938e8c;
+    font-family: simhei;
     .head-title{
         width: 110px;
         height: 61px;
-        background-color: red;
+        background-color: @theme-color-red;
         color: #ffffff;
         font-size: 12px;
         display: table-cell;
@@ -32,7 +34,7 @@ header{
         right: 44px;
         top: 42px;
         font-size: 12px;
-        color: #d45d5c;
+        color: @theme-color-red;
     }
     &::after{
         display: block;
@@ -220,14 +222,19 @@ header{
                 width: 458px;
                 height: 61px;
                 background-color: rgba(0,0,0,0.5);
+                line-height: 61px;
                 span{
                     display: inline-block;
                 }
                 .image-title-left{
                     margin-left: 30px;
-                    border-left: 1px solid #72b16a;
                     font-size: 26px;
                     color:#fff;
+                    &::before{
+                        content: "";
+                        border-left: 3px solid #72b16a;
+                        margin-right: 8px;
+                    }
                 }
                 .image-title-right{
                     font-size: 12px;
@@ -238,73 +245,126 @@ header{
             }
         }
         .right-menu-panel{
-            background-color: #ccc;
+            background-color: #eeedd6;
+            margin-top: 20px;
             width: 459px;
             height: 318px;
+            padding: 30px 20px 0 0;
+            box-sizing: border-box;
+            position: relative;
             ul li{
-                list-style: triangle;
+                list-style: none;
+                margin-left: 30px;
                 font-size: 16px;
                 color: #5a5b5b;
                 font-family: simsun;
                 text-align: left;
                 line-height: 20px;
-            }
-            .menu-left{
-                color: #fff;
-                font-family: simhei;
-                width: 199px;
-                display: inline-block;
-                .menu-red-0{
-                    font-size: 110px;
-                    border-right: 2px solid #ffffff;
+                margin-bottom: 20px;
+                &::before{
+                    content: "";
                     display: inline-block;
+                    border-left: 5px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-bottom: 5px solid;
+                    margin: 0 8px 2.5px 0;
                 }
-                .menu-red-right{
+                .menu-item-right{
+                    font-size: 12px;
+                    float: right;
+                    font-style: italic;
+                }
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    clear: both;
+                }
+            }
+            .menu-bottom-container{
+                .menu-red{
+                    color: #fff;
+                    font-family: simhei;
                     display: inline-block;
                     height: 160px;
                     width: 260px;
-                    background-color: #ff0000;
-                    .px21{
-                        font-size: 21px;
+                    background-color: @theme-color-red;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    .text-container{
+                        height: 86px;
                     }
-                    .px12{
-                        font-size: 12px;
+                    .menu-red-0{
+                        font-size: 110px;
+                        display: inline-block;
+                        margin: 20px 10px 0 20px;
+
+                        &:after{
+                            height: 86px;
+                            width: 2px;
+                            content: "";
+                            background-color: #ffffff;
+                            display: inline-block;
+                        }
+                    }
+                    .menu-red-right{
+                        display: inline-block;
+                        .px21{
+                            font-size: 21px;
+                            font-style: italic;
+                        }
+                        .px12{
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .menu-para{
+                    font-family: simhei;
+                    width: 185px;
+                    height: 160px;
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    p{
+                        font-size: 14px;
+                        color: #5a5b5b;
+                        font-style: italic;
+                        line-height: 16px;
+                        text-indent: 3em;
+                        position: absolute;
+                        top: 20px;
+                    }
+                    &::before{
+                        content:'“';
+                        font-size: 72px;
+                        color: @theme-color-red;
+                        position: absolute;
+                        left: -40px;
+                    }
+                    &::after{
+                        content:'”';
+                        font-size: 72px;
+                        color: @theme-color-red;
+                        position: absolute;
+                        right: 0;
+                        bottom: -35px;
                     }
                 }
             }
-            .menu-right{
-                font-family: simhei;
-                width: 260px;
-                height: 160px;
-                display: inline-block;
-                p{
-                    font-size: 14px;
-                    color: #5a5b5b;
-                    font-style: italic;
-                    line-height: 16px;
-                }
-                &::before{
-                    content:'“';
-                    font-size: 72px;
-                    color: #d45d5c;
-                }
-                &::after{
-                    content:'”';
-                    font-size: 72px;
-                    color: #d45d5c;
-                }
-            }
+
         }
 
     }
 }
 
 footer{
+    margin-top: 30px;
     border-top: 1px solid #938e8c;
     span{
         float: right;
         font-size: 12px;
         font-family: simhei;
-        color: #d45d5c;
+        color: @theme-color-red;
     }
 }
