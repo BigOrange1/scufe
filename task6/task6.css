@@ -168,6 +168,7 @@ header::after {
 .section-two .section-two-left .section-two-left-title .the {
   color: #f5e327;
   font-size: 72px;
+  font-style: italic;
 }
 .section-two .section-two-left .section-two-left-title .tech {
   line-height: 16px;
