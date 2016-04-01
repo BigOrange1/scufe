@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task10_flex布局</title>
+    <style>
+        *{
+            padding: 20px;
+        }
+        .flex{
+            display: flex;
+            border: 1px solid grey;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .flex>div{
+            width: 150px;
+            border: 1px solid red;
+        }
+        .one{
+            height: 120px;
+        }
+        .two{
+            height: 100px;
+        }
+        .three{
+            height: 40px;
+        }
+        div.four{
+            height: 200px;
+            border: solid 1px blue;
+        }
+        @media all and (max-width: 640px){
+            .flex{
+                flex-flow: row wrap;
+                align-items: flex-start;
+            }
+            .four{
+                order: 1;
+            }
+            .one{
+                order: 2;
+            }
+            .two{
+                order: 3;
+            }
+            .three{
+                order: 4;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="flex">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</div>
+</body>
+</html>
