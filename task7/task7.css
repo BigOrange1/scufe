@@ -1,4 +1,244 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei";
+}
+.head-nav {
+  height: 60px;
+  line-height: 60px;
+  /*使导航栏的文字垂直居中*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #393a3a;
+}
+.head-nav .nav-bar {
+  margin-left: 50px;
+}
+.head-nav .nav-bar img {
+  vertical-align: middle;
+  /*使得文字的中间和img的中间对齐*/
+}
+.head-nav .nav-bar span {
+  font-family: "simhei";
+  font-size: 21px;
+  vertical-align: middle;
+  /*使得文字的中间和img的中间对齐*/
+}
+.head-nav .nav-menu {
+  height: 100%;
+  font-size: 14px;
+}
+.head-nav .nav-menu li {
+  height: 100%;
+  float: left;
+  list-style: none;
+  padding: 0 10px 0 10px;
+}
+.head-nav .nav-menu li.active {
+  border-bottom: 3px solid #e74f4d;
+}
+.head-nav .nav-menu li:hover {
+  border-bottom: 3px solid #e74f4d;
+  cursor: pointer;
+}
+.head-nav .nav-menu li:last-of-type {
+  border-bottom: none;
+  color: #e74f4d;
+}
+.head-nav .nav-menu li:last-of-type::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 17px;
+  margin-right: 2px;
+  vertical-align: text-bottom;
+  background: url(img/user.png);
+}
+.introduce {
+  height: 670px;
+  background: url("img/introduce-back.png");
+  background-size: cover;
+  color: #ffffff;
+  /*不知道为什么不能合并*/
+  /*能做到直接在背景图片上覆盖一层背景色么？*/
+  padding: 206px 0 0 114px;
+}
+.introduce .title {
+  font-size: 60px;
+}
+.introduce .para {
+  width: 300px;
+  font-size: 21px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.introduce button {
+  margin-left: 10px;
+  color: #ffffff;
+  /*为什么父亲的color对button没用*/
+  border: none;
+  font-size: 30px;
+  margin-top: 62px;
+  background-color: #e74f4d;
+  width: 330px;
+  height: 64px;
+}
+.introduce-bar {
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+.introduce-bar .introduce-bar-item {
+  width: 25%;
+  text-align: center;
+  color: #767777;
+}
+.introduce-bar .introduce-bar-item div {
+  margin-top: 46px;
+  border-right: 1px solid grey;
+}
+.introduce-bar .introduce-bar-item div span {
+  font-family: simhei;
+  font-size: 14px;
+  width: 156px;
+  display: inline-block;
+}
+.introduce-bar .introduce-bar-item:last-of-type div {
+  border-right: none;
+}
+.question {
+  background-color: #ededec;
+  vertical-align: middle;
+  text-align: center;
+  height: 360px;
+}
+.question img {
+  margin-top: 88px;
+  margin-bottom: 46px;
+}
+.question div {
+  font-size: 53.59px;
+  color: #a1a1a1;
+}
+.map-search {
+  height: 340px;
+  background: url("img/readmap.png");
+  background-size: cover;
+  text-align: center;
+  padding-top: 52px;
+  /*有没有什么办法把after元素加到中间。而不是最后或者最前*/
+}
+.map-search .map-title {
+  color: #ffffff;
+  font-size: 21px;
+}
+.map-search:after {
+  margin-top: 8px;
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  border: 1px solid white;
+}
+.map-search .map-hint {
+  margin-top: 18px;
+  color: #ffffff;
+  font-size: 12px;
+}
+.map-search .select-group {
+  margin-top: 52px;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.map-search .select-group select {
+  width: 236px;
+  height: 38px;
+  color: #a8aaaa;
+  font-size: 12px;
+}
+.map-search .select-group button {
+  width: 236px;
+  height: 38px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  background-color: #be4e48;
+}
+.activity {
+  background-color: #f7f7f7;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  height: 604px;
+}
+.activity div {
+  text-align: center;
+}
+.activity div .activity-img {
+  background-color: #ffffff;
+  padding: 10px 5px 10px 5px;
+  border: 1px solid #ddd;
+}
+.activity div span {
+  display: block;
+  font-size: 12px;
+  color: #818181;
+}
+.activity div span.activity-title {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.activity div .activity-title-big {
+  /*让文字两端分散对齐的方式*/
+  text-align: justify;
+  font-size: 21px;
+  color: #333;
+  height: 30px;
+  /*不知道为什么，高度不正常*/
+}
+.activity div .activity-title-big .empty-span {
+  display: inline-block;
+  padding-left: 100%;
+  font-size: 0;
+}
+.activity div .activity-title-big + span {
+  /*兄弟选择器*/
+  margin-bottom: 5px;
+}
+.project-introduce {
+  display: flex;
+}
+.project-introduce .legs-back {
+  width: 852px;
+  height: 566px;
+  background: url("img/legs.png");
+  color: #ffffff;
+  text-align: center;
+  padding-top: 128px;
+  flex-shrink: 0;
+}
+.project-introduce .legs-back .new-time {
+  font-size: 49.47px;
+}
+.project-introduce .legs-back .time-title {
+  font-size: 157.79px;
+}
+.project-introduce .legs-back .address,
+.project-introduce .legs-back .time {
+  font-size: 21.91px;
+}
+.project-introduce .new-time-introduce:before {
+  content: '';
+  display: block;
+  border-right: 30px solid red;
+  border-top: 13px transparent solid;
+  border-bottom: 13px transparent solid;
 }

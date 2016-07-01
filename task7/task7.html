@@ -3,81 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="task7.css"/>
 </head>
 <body>
 <header>
-    <nav></nav>
+    <nav class="head-nav">
+        <div class="nav-bar">
+            <img class="nav-img" src="img/book.png" alt=""/>
+            <span class="nav-brand">新世界</span>
+        </div>
+        <ul class="nav-menu">
+            <li class="active">首页</li>
+            <li>最新活动</li>
+            <li>项目介绍</li>
+            <li>爱心社区</li>
+            <li>关于我们</li>
+            <li>登陆</li>
+        </ul>
+    </nav>
 </header>
-<div>
-    <div>Time of new life</div>
-    <div>新时代，年轻的人们让我们一起
-        体验新生活，享受新生活
+<section>
+    <div class="introduce">
+        <div class="title">Time of new life</div>
+        <div class="para">新时代，年轻的人们让我们一起
+            体验新生活，享受新生活
+        </div>
+        <button>开始体验</button>
     </div>
-    <button>开始体验</button>
-</div>
-<div>
-    <div>
-        <div></div>
-        <div>打造全新世界观，让你更爱你的生活</div>
-    </div>
-    <div>
-        <div></div>
-        <div>
-            丰富多彩的公益活动，发挥新世界的主人公意识
+    <div class="introduce-bar">
+        <div class="introduce-bar-item">
+            <img src="img/circle.png" alt=""/>
+            <div><span>打造全新世界观，让你更爱你的生活</span></div>
+        </div>
+        <div class="introduce-bar-item">
+            <img src="img/flag.png" alt=""/>
+            <div><span>丰富多彩的公益活动，发挥新世界的主人公意识</span></div>
+        </div>
+        <div class="introduce-bar-item">
+            <img src="img/flower.png" alt=""/>
+            <div><span>时尚的新理念，超前体验未知的生活</span></div>
+        </div>
+        <div class="introduce-bar-item">
+            <img src="img/square.png" alt=""/>
+            <div><span>完善的培养机制，培养你全新的世界观</span></div>
         </div>
     </div>
-    <div>
-        <div></div>
-        <div>时尚的新理念，超前体验未知的生活</div>
-    </div>
-    <div>
-        <div></div>
-        <div>完善的培养机制，培养你全新的世界观</div>
-    </div>
-</div>
-<div>
-    <div></div>
-    <div>关于新世界，你不知道的还有什么？</div>
-</div>
-<div>
-    <div>查找新世界城市活动信息</div>
-    <div>每个城市的有不同的活动信息，请自主查询您所需要了解的城市</div>
-    <div>
-        <select name="" id="nation"></select>
-        <select name="" id="province"></select>
-        <select name="" id="city"></select>
-        <button></button>
-    </div>
-</div>
-<section>
-    <div>
-        <div><img src="" alt=""/></div>
-        <div></div>
-    </div>
-    <div>
-        <div><img src="" alt=""/></div>
-        <div></div>
-    </div>
-    <div>
-        <div><img src="" alt=""/></div>
-        <div></div>
-    </div>
-    <div>
-        <div><img src="" alt=""/></div>
-        <div></div>
-    </div>
 </section>
-<section>
-    <div>
-        <p>新世界</p>
 
-        <p>TIME</p>
-
-        <p>@新世界 - 北京</p>
-
-        <p>2016.04.01</p>
+<section class="last-activity">
+    <div class="question">
+        <img src="img/bigbook.png" alt=""/>
+        <div>关于新世界，你不知道的还有什么？</div>
     </div>
-    <div>
+    <div class="map-search">
+        <div class="map-title">查找新世界城市活动信息</div>
+        <div class="map-hint">每个城市的有不同的活动信息，请自主查询您所需要了解的城市</div>
+        <div class="select-group">
+            <select name="" id="nation">
+                <option value="">中国</option>
+            </select>
+            <select name="" id="province">
+                <option value="">省份</option>
+                <option value="">北京市</option>
+                <option value="">天津市</option>
+                <option value="">河北省</option>
+                <option value="">陕西省</option>
+                <option value="">内蒙古自治区</option>
+                <option value="">辽宁省</option>
+            </select>
+            <select name="" id="city">
+                <option value="">城市</option>
+            </select>
+            <button>搜索</button>
+        </div>
+    </div>
+    <div class="activity">
+        <div>
+            <div class="activity-img">
+                <img src="img/9_01.png" alt=""/>
+            </div>
+            <div>
+                <span class="activity-title">北京活动</span>
+                <span>新社区大联盟</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div class="activity-title-big">
+                    上海活动
+                    <span class="empty-span"></span>
+                </div>
+                <span>夜上海新景观探索</span>
+            </div>
+            <div  class="activity-img">
+                <img src="img/9_03.png" alt=""/>
+            </div>
+        </div>
+        <div>
+            <div class="activity-img">
+                <img src="img/9_05.png" alt=""/>
+            </div>
+            <div>
+                <span class="activity-title">深圳活动</span>
+                <span>全新海岸线观点站</span>
+            </div>
+        </div>
+        <div>
+            <div class="activity-img">
+                <img src="img/9_07.png" alt=""/>
+            </div>
+            <div>
+                <span class="activity-title">香港活动</span>
+                <span>奢侈消费大派送</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="project-introduce">
+    <div class="legs-back">
+        <p class="new-time">新世界</p>
+
+        <p class="time-title">TIME</p>
+
+        <p class="address">@新世界 - 北京</p>
+
+        <p class="time">2016.04.01</p>
+    </div>
+    <div class="new-time-introduce">
         <p>新世界/01</p>
 
         <p>
@@ -105,7 +158,7 @@
 
     </div>
 </section>
-<section>
+<section class="love-community">
     <div>成为我们的志愿者</div>
     <p>新世界的大家庭需要每一个热爱生活的人的加入，如果你够年轻，有梦想，有激情</p>
 
@@ -146,7 +199,7 @@
         </div>
     </div>
 </section>
-<footer>
+<section class="contact-us">
     <div>
         <h2>联系我们</h2>
         <p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯</p>
@@ -160,9 +213,10 @@
             <a href="https://www.baidu.com"><img src="" alt=""/></a>
         </div>
     </div>
-    <div>
-        @2016新世界
-    </div>
+</section>
+<footer>
+    <span>@2016新世界</span>
+    <button>back to top</button>
 </footer>
 </body>
 </html>
